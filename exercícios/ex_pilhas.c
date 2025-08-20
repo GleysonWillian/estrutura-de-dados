@@ -1,10 +1,9 @@
-#include <stdio.h>
-#define MAX 5 // tamanho máximo da pilha
+#include <stdlib.h>
+#define MAX 5
 
-int pilha[MAX]; // array que guarda os elementos
-int topo = -1;  // indica a posição do último elemento
+int pilha[MAX];
+int topo = -1;
 
-// Função para adicionar (push)
 void push(int valor)
 {
     if (topo == MAX - 1)
@@ -15,11 +14,10 @@ void push(int valor)
     {
         topo++;
         pilha[topo] = valor;
-        printf("Inserido %d na pilha\n", valor);
+        printf("Inserido %d na pilha!\n", valor);
     }
 }
 
-// Função para remover (pop)
 void pop()
 {
     if (topo == -1)
@@ -28,12 +26,11 @@ void pop()
     }
     else
     {
-        printf("Removido %d da pilha\n", pilha[topo]);
+        printf("Removido %d da pilha!\n", pilha[topo]);
         topo--;
     }
 }
 
-// Função para mostrar a pilha
 void mostrar()
 {
     if (topo == -1)
@@ -42,10 +39,10 @@ void mostrar()
     }
     else
     {
-        printf("Pilha atual: ");
+        printf("Pilha atual:");
         for (int i = 0; i <= topo; i++)
         {
-            printf("%d ", pilha[i]);
+            printf("%d", pilha[i]);
         }
         printf("\n");
     }
@@ -57,7 +54,6 @@ int main()
     push(20);
     push(30);
     push(40);
-    push(50);
     mostrar();
 
     pop();
