@@ -41,13 +41,11 @@ Pessoa lerPessoa()
 
 int main()
 {
-    int i;
-    Pessoa pessoas[3];
-    for (i = 0; i < 3; i++)
-        pessoas[i] = lerPessoa();
+    Pessoa pessoas[2][2];
 
-    for (i = 0; i < 3; i++)
-        imprimirPessoa(pessoas[i]);
+    pessoas[0][0] = lerPessoa();
+
+    imprimirPessoa(pessoas[0][0]);
 
     return 0;
 }
