@@ -13,7 +13,7 @@ int main() {
     printf("Depois: x = %d\n", x);
 
     printf("Valor de x: %d\n", x);
-    printf("Valor de p: %p\n", &x);
+    printf("Endereco de p: %p\n", &x);
     printf("Valor de p (endereco): %p\n", p);
     printf("Valor de p: %d\n", *p);
 
